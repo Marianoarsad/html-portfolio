@@ -8,14 +8,9 @@
 body {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(#F5DD61, #FFC700)
+    background: #fff;
 }
 
-.picture {
-    position: fixed;
-    top: 140px;
-    left: 300px;
-}
 
 header {
     width: 100%;
@@ -27,20 +22,27 @@ header {
     background: transparent;
 }
 
+.logo {
+    text-decoration: none;
+    color: #0F0F0F;
+    font-weight: 300px;
+    font-size: 31px;
+}
+
 ul {
     list-style: none;
 }
 
 ul > li {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 li > a {
     position: relative; 
     text-decoration: none;
-    color: #FEFBF6;
-    font-size: 20px;
+    color: #0F0F0F;
+    font-size: 16px;
     font-weight: bold;  /* ampanget ng font dapat yung friendly tignan */
 }
 
@@ -51,7 +53,7 @@ li > a::before {    /* ano yung a::before */
    left: 0;
    width: 0;
    height: 2px;
-   background: #fff;
+   background: #0F0F0F;
    transition: 0.3s;
 }
 
@@ -59,10 +61,227 @@ li > a:hover::before {
     width: 100%;
 }
 
+/* End of navbar */
 
-.logo {
-    text-decoration: none;
-    color: #FEFBF6;
-    font-weight: 300px;
-    font-size: 31px;
+/* Start of Homepage */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
+
+.picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture {
+    border-top-left-radius: 67% ;
+    border-top-right-radius: 70%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 70%;
+    border: #F5DD61 solid 5px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.full-stack {
+    color: #F5DD61;
+    font-size: 3rem;
+}
+
+.bio {
+    margin-top: 50px;
+    font-family: "Canva Sans", sans-serif;
+    font-weight: lighter;
+}
+
+.icon-container { 
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.tech-stack {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-align: center;
+}
+
+.tech-stack > p {
+    font-weight: bold;
+}
+
+.vertical-line {
+    height: 100%;
+    width: 1px;
+    background-color: #0F0F0F;
+}
+
+/* End of Homepage page */
+
+/* Start ng About Me */
+.second-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    gap: 90px;
+    width: 80%;
+    height: 100vh;
+    background: transparent;
+}
+
+.about-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-picture {
+    border: 5px solid #F5DD61;
+    border-radius: 50px;
+    box-shadow: 10px 5px 15px #F5DD61;
+}
+
+.about-me {
+    font-weight: bold;
+    color: #F5DD61;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about-headline-container {
+    width: 65%;
+}
+
+.about-headline {
+    text-transform: uppercase;
+}
+
+.about-bio {
+    font-weight: lighter;
+}
+
+.about-bio-container {
+    text-align: justify;
+    width: 60%;
+}
+
+/* end ng About Me */
+
+/* Start of footer */
+
+.yellow-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 25vh;
+    width: 100%;
+    background-color: #F5DD61;
+}
+
+.footer-icons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    margin-top: 30px;
+    gap: 18px;
+}
+
+
+.footer-links > a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.footer-links > a:hover {
+    color: #59D5E0;
+    transition: 0.3s;
+}
+
+.orange-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    background-color: #FAA300;
+}
+
+.orange-container > p {
+    font-size: 0.8em;
+    color: #fff;
+}
+
+/* End of footer */
+
+/* Start of Contact */
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 28vh;
+}
+
+.contact-inner-container {
+    width: 80%;
+    height: 100%;
+}
+
+.contact-h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #F5DD61;
+    text-transform: uppercase;
+}
+
+.contact-phone-email-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.content-text {
+    color: #F5DD61;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* End of Contact */
